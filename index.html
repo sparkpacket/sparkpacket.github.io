@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>sparkpacket terminal hub</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #0f0;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 20px;
+      margin: 0;
+    }
+    h1, h2 {
+      color: #0ff;
+    }
+    .section {
+      margin-top: 2em;
+    }
+    a {
+      color: #0f0;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .prompt {
+      color: #0f0;
+    }
+    .output {
+      margin-left: 20px;
+    }
+    .blink {
+      animation: blink 1s steps(2, start) infinite;
+    }
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>sparkpacket@terminal:~$</h1>
+
+  <div class="section">
+    <div class="prompt">> cd wanderings</div>
+    <div class="output">
+      <p><a href="https://sparkpacket.github.io/opterminal" target="_blank">wccp</a></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="prompt">> cd operators-games</div>
+    <div class="output">
+      <p><a href="https://guesser.onecompiler.app/" target="_blank">guesser</a></p>
+      <p><a href="https://fastdirections.onecompiler.app/" target="_blank">fast directions</a></p>
+    </div>
+  </div>
+
+  <div class="prompt">> _<span class="blink">█</span></div>
+
+</body>
+</html>
