@@ -48,7 +48,7 @@
 
   <div class="section">
     <div class="prompt">> cd sparkpacket</div>
-    <div class="output">
+    <div class="output" id="sparkpacket-links">
       <p><a href="https://sparkpacket.github.io/opterminal" target="_blank">chat program</a></p>
       <p><a href="https://sparkpacket.github.io/spgtti" target="_blank">spgtti</a></p>
       <p><a href="https://sparkpacket.github.io/WEBJUMPER/" target="_blank">WEBJUMPER</a></p>
@@ -95,6 +95,17 @@
   </div>
 
   <div class="prompt">> _<span class="blink">█</span></div>
+
+<script>
+  // Check localStorage for ARG secret
+  const secretStatus = localStorage.getItem("THEPLACEYOUSHOULDVENEVERSEEN");
+  if (secretStatus === "unlocked") {
+    const container = document.getElementById("sparkpacket-links");
+    const newLink = document.createElement("p");
+    newLink.innerHTML = `<a href="https://sparkpacket.github.io/NEW_PLACE_PLACEHOLDER" target="_blank">?? New Place ??</a>`;
+    container.appendChild(newLink);
+  }
+</script>
 
 </body>
 </html>
